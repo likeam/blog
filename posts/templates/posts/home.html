@@ -6,9 +6,10 @@
     <title>Blogs Home Page</title>
   </head>
   <body>
+    <h1>{{username|capfirst}}</h1>
     {% if posts %}
     <h1>All Posts Available</h1>
-    {% for post in posts %}
+    {% for post in posts %} {{forloop.counter}}
     <a href=""><h1>{{post.title}}</h1></a>
     <p>{{post.body}}</p>
     {% endfor %} {% else %}

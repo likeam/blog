@@ -60,7 +60,7 @@ def home(request):
             <p>{post['body']}</p>
         </div>
         '''
-    return render(request, 'posts/home.html', {"posts":posts})
+    return render(request, 'posts/home.html', {"posts":posts, "username":"hania"})
 
 def post(request, id):
     vali_id = False
